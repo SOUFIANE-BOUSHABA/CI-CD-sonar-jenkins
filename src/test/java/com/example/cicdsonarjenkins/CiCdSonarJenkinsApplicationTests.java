@@ -5,13 +5,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-
+@SpringBootTest
 class CiCdSonarJenkinsApplicationTests {
 
     @Test
-    void test() {
-        assertTrue(true);
-
+    void contextLoads() {
+        assertTrue(true, "Application context loads without errors");
     }
 
 }
