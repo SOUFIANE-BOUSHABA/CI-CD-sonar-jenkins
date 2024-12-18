@@ -1,0 +1,17 @@
+name: testDb
+services:
+  postgres:
+    container_name: testDb
+    image: 'postgres:17'
+    environment:
+      - 'POSTGRES_DB=testDb'
+      - 'POSTGRES_PASSWORD=testDb'
+      - 'POSTGRES_USER=testDb'
+    ports:
+      - '5433:5432'
+volumes:
+  postgres_data:
+    driver: local
+networks:
+  jenkins-network:
+    driver: bridge
