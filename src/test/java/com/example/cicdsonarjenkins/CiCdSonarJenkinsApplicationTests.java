@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class CiCdSonarJenkinsApplicationTests {
 
     @Test
-    void contextLoads() {
+    void test() {
         assertTrue(true, "Application context loads without errors");
     }
 
